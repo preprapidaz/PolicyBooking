@@ -1,0 +1,161 @@
+name: CI/CD Pipeline - Build, Test & Deploy to AKS
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch: # Manual trigger
+
+env:
+  AZURE_RESOURCE_GROUP: rg-am-learninghub
+  AKS_CLUSTER_NAME: policyservice-aks
+  ACR_NAME: policyserviceacr
+  ACR_LOGIN_SERVER: policyserviceacr.azurecr.io
+  IMAGE_NAME_API: policyservice-api
+  IMAGE_NAME_WORKER: policyservice-worker
+  DOTNET_VERSION: '8.0.x'
+
+jobs:
+  build-and-test:
+    name: Build & Test
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+    
+    - name: Restore dependencies
+      run: dotnet restore PolicyBooking.sln
+    
+    - name: Build solution
+      run: dotnet build PolicyBooking.sln --configuration Release --no-restore
+    
+    - name: Run tests
+      run: dotnet test PolicyBooking.sln --configuration Release --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx"
+    
+    - name: Publish test results
+      uses: dorny/test-reporter@v1
+      if: always()
+      with:
+        name: Test Results
+        path: '**/test-results.trx'
+        reporter: dotnet-trx
+  
+  build-and-push-images:
+    name: Build & Push Docker Images
+    runs-on: ubuntu-latest
+    needs: build-and-test
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+    
+    - name: Log in to Azure Container Registry
+      uses: docker/login-action@v2
+      with:
+        registry: ${{ env.ACR_LOGIN_SERVER }}
+        username: ${{ secrets.ACR_USERNAME }}
+        password: ${{ secrets.ACR_PASSWORD }}
+    
+    - name: Build and push API image
+      uses: docker/build-push-action@v4
+      with:
+        context: .
+        file: ./src/Services/PolicyService/PolicyService.API/Dockerfile
+        platforms: linux/arm64
+        push: true
+        tags: |
+          ${{ env.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME_API }}:${{ github.sha }}
+          ${{ env.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME_API }}:latest
+        cache-from: type=registry,ref=${{ env.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME_API }}:buildcache
+        cache-to: type=registry,ref=${{ env.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME_API }}:buildcache,mode=max
+    
+    - name: Build and push Worker image
+      uses: docker/build-push-action@v4
+      with:
+        context: .
+        file: ./src/Services/PolicyService/PolicyService.Worker/Dockerfile
+        platforms: linux/arm64
+        push: true
+        tags: |
+          ${{ env.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME_WORKER }}:${{ github.sha }}
+          ${{ env.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME_WORKER }}:latest
+        cache-from: type=registry,ref=${{ env.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME_WORKER }}:buildcache
+        cache-to: type=registry,ref=${{ env.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME_WORKER }}:buildcache,mode=max
+  
+  deploy-to-aks:
+    name: Deploy to AKS
+    runs-on: ubuntu-latest
+    needs: build-and-push-images
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+    - name: Set AKS context
+      uses: azure/aks-set-context@v3
+      with:
+        resource-group: ${{ env.AZURE_RESOURCE_GROUP }}
+        cluster-name: ${{ env.AKS_CLUSTER_NAME }}
+    
+    - name: Deploy to AKS
+      run: |
+        # Apply namespace
+        kubectl apply -f k8s/01-namespace.yaml
+        
+        # Apply secrets
+        kubectl apply -f k8s/02-secret.yaml
+        
+        # Apply service account
+        kubectl apply -f k8s/05-serviceaccount.yaml
+        
+        # Update deployment with new image
+        kubectl set image deployment/policyservice-api \
+          api=${{ env.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME_API }}:${{ github.sha }} \
+          -n policyservice
+        
+        # If deployment doesn't exist, create it
+        kubectl apply -f k8s/03-deployment-api.yaml || true
+        
+        # Apply service
+        kubectl apply -f k8s/04-service-api.yaml
+        
+        # Wait for rollout
+        kubectl rollout status deployment/policyservice-api -n policyservice --timeout=5m
+    
+    - name: Verify deployment
+      run: |
+        echo "Checking pod status..."
+        kubectl get pods -n policyservice
+        
+        echo "Checking service..."
+        kubectl get svc -n policyservice
+        
+        echo "Getting external IP..."
+        EXTERNAL_IP=$(kubectl get svc policyservice-api -n policyservice -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+        echo "API is accessible at: http://$EXTERNAL_IP/swagger"
+    
+    - name: Post deployment notification
+      if: always()
+      run: |
+        if [ ${{ job.status }} == 'success' ]; then
+          echo "✅ Deployment successful!"
+          echo "API URL: http://$(kubectl get svc policyservice-api -n policyservice -o jsonpath='{.status.loadBalancer.ingress[0].ip}')/swagger"
+        else
+          echo "❌ Deployment failed!"
+        fi

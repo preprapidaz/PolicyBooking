@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: policyservice-api
+  namespace: policyservice
+  labels:
+    app: policyservice-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: policyservice-api
+  template:
+    metadata:
+      labels:
+        app: policyservice-api
+        azure.workload.identity/use: "true"
+    spec:
+      serviceAccountName: policyservice-identity
+      containers:
+      - name: api
+        image: policyserviceacr.azurecr.io/policyservice-api:latest
+        ports:
+        - containerPort: 8080
+          name: http
+        envFrom:
+        - secretRef:
+            name: policyservice-secrets
+        env:
+        - name: UseAzureSql
+          value: "true"
+        - name: KeyVaultName
+          valueFrom:
+            secretKeyRef:
+              name: policyservice-secrets
+              key: KEYVAULT_NAME
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+          limits:
+            memory: "1Gi"
+            cpu: "500m"
+        # livenessProbe:
+          # httpGet:
+            # path: /health
+            # port: 8080
+          # initialDelaySeconds: 30
+          # periodSeconds: 10
+        # readinessProbe:
+          # httpGet:
+            # path: /health
+            # port: 8080
+          # initialDelaySeconds: 10
+          # periodSeconds: 5

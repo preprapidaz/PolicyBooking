@@ -1,0 +1,108 @@
+version: '3.8'
+
+services:
+  
+  # ============================================
+  # SQL SERVER DATABASE
+  # ============================================
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: policyservice-sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong@Passw0rd123
+      - MSSQL_PID=Developer
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P YourStrong@Passw0rd123 -C -Q 'SELECT 1' || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+    networks:
+      - policyservice-network
+
+  # ============================================
+  # REDIS CACHE
+  # ============================================
+  redis:
+    image: redis:7-alpine
+    container_name: policyservice-redis
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+    networks:
+      - policyservice-network
+
+  # ============================================
+  # POLICY SERVICE API
+  # ============================================
+  policyservice-api:
+    build:
+      context: .
+      dockerfile: src/Services/PolicyService/PolicyService.API/Dockerfile
+    container_name: policyservice-api
+    ports:
+      - "5000:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=PolicyServiceDb;User Id=sa;Password=YourStrong@Passw0rd123;TrustServerCertificate=True;
+      - Redis__ConnectionString=redis:6379
+      - Logging__LogLevel__Default=Information
+      - Logging__LogLevel__Microsoft.AspNetCore=Warning
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - policyservice-network
+    restart: unless-stopped
+
+  # ============================================
+  # POLICY SERVICE WORKER
+  # ============================================
+  policyservice-worker:
+    build:
+      context: .
+      dockerfile: src/Services/PolicyService/PolicyService.Worker/Dockerfile
+    container_name: policyservice-worker
+    environment:
+      - DOTNET_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=PolicyServiceDb;User Id=sa;Password=YourStrong@Passw0rd123;TrustServerCertificate=True;
+      - Redis__ConnectionString=redis:6379
+      - Logging__LogLevel__Default=Information
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      policyservice-api:
+        condition: service_started
+    networks:
+      - policyservice-network
+    restart: unless-stopped
+
+networks:
+  policyservice-network:
+    driver: bridge
+    name: policyservice-network
+
+volumes:
+  sqlserver-data:
+    driver: local
+    name: policyservice-sqlserver-data
+  redis-data:
+    driver: local
+    name: policyservice-redis-data

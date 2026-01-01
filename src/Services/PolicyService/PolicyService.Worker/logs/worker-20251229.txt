@@ -1,0 +1,1234 @@
+[2025-12-29 13:02:57 INF] ========================================
+[2025-12-29 13:02:57 INF] Starting Policy Processing Worker
+[2025-12-29 13:02:57 INF] ========================================
+[2025-12-29 13:02:59 INF] Configuration files loaded
+[2025-12-29 13:02:59 INF] Key Vault URL from config: https://kv-policyservice-dev.vault.azure.net/
+[2025-12-29 13:02:59 INF] Attempting to connect to Key Vault...
+[2025-12-29 13:03:06 INF] Azure Key Vault configured
+[2025-12-29 13:03:06 INF] Serilog configured
+[2025-12-29 13:03:06 INF] Use Azure SQL: true
+[2025-12-29 13:03:06 INF] Database connection string found (length: 250)
+[2025-12-29 13:03:06 INF] Database context configured
+[2025-12-29 13:03:06 INF] Processing services registered
+[2025-12-29 13:03:06 INF] Worker service registered
+[2025-12-29 13:03:06 INF] ========================================
+[2025-12-29 13:03:06 INF] Worker configured successfully
+[2025-12-29 13:03:06 INF] ========================================
+[2025-12-29 13:03:07 INF] Policy Processing Worker starting...
+[2025-12-29 13:03:07 INF] Worker started | Queue: policy-processing-queue | MaxConcurrent: 5
+[2025-12-29 13:03:07 INF] Listening for messages...
+[2025-12-29 13:03:37 DBG] Heartbeat
+[2025-12-29 13:04:07 DBG] Heartbeat
+[2025-12-29 13:04:33 INF] Received message | MessageId: d9f98315-b3f0-4a4e-9174-9f41640ae3aa | CorrelationId: 0f281e37-e5d3-4df0-a207-231ee70587b8
+[2025-12-29 13:04:33 INF] Processing policy POL-20251229-4C6859C2 | PolicyId: "c7b5758c-42aa-414c-863a-c00845202d91"
+[2025-12-29 13:04:33 INF] Generated file | Name: POLICY_20251229_050433_0f281e37.txt | Policy: POL-20251229-4C6859C2
+[2025-12-29 13:04:33 INF] File generated: D:\PolicyBooking-FlatFiles\Outbound\POLICY_20251229_050433_0f281e37.txt
+[2025-12-29 13:04:33 INF] Calling End Booking System...
+[2025-12-29 13:04:33 INF] Calling End Booking System | PolicyId: "c7b5758c-42aa-414c-863a-c00845202d91"
+[2025-12-29 13:04:33 INF] Start processing HTTP request POST https://httpstat.us/api/bookings
+[2025-12-29 13:04:33 INF] Sending HTTP request POST https://httpstat.us/api/bookings
+[2025-12-29 13:04:34 INF] HTTP request failed after 1063.5813ms
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+[2025-12-29 13:04:36 INF] Sending HTTP request POST https://httpstat.us/api/bookings
+[2025-12-29 13:04:37 DBG] Heartbeat
+[2025-12-29 13:04:37 INF] HTTP request failed after 719.0952ms
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+[2025-12-29 13:04:41 INF] Sending HTTP request POST https://httpstat.us/api/bookings
+[2025-12-29 13:04:42 INF] HTTP request failed after 711.0496ms
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+[2025-12-29 13:04:50 INF] Sending HTTP request POST https://httpstat.us/api/bookings
+[2025-12-29 13:04:50 INF] HTTP request failed after 692.6941ms
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+[2025-12-29 13:04:50 INF] HTTP request failed after 17356.9416ms
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+[2025-12-29 13:04:51 ERR] End Booking System call failed | PolicyId: "c7b5758c-42aa-414c-863a-c00845202d91"
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at PolicyService.Infrastructure.ExternalServices.EndBookingSystemClient.SubmitPolicyAsync(BookingRequest request) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Infrastructure\ExternalServices\EndBookingSystemClient.cs:line 36
+[2025-12-29 13:04:51 ERR] End Booking System call failed
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at PolicyService.Infrastructure.ExternalServices.EndBookingSystemClient.SubmitPolicyAsync(BookingRequest request) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Infrastructure\ExternalServices\EndBookingSystemClient.cs:line 36
+   at PolicyService.Worker.Services.PolicyProcessingService.ProcessPolicyAsync(ProcessMessageEventArgs args, CancellationToken cancellationToken) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Services\PolicyProcessingService.cs:line 87
+[2025-12-29 13:04:51 ERR] Error processing message | MessageId: d9f98315-b3f0-4a4e-9174-9f41640ae3aa
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at PolicyService.Infrastructure.ExternalServices.EndBookingSystemClient.SubmitPolicyAsync(BookingRequest request) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Infrastructure\ExternalServices\EndBookingSystemClient.cs:line 36
+   at PolicyService.Worker.Services.PolicyProcessingService.ProcessPolicyAsync(ProcessMessageEventArgs args, CancellationToken cancellationToken) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Services\PolicyProcessingService.cs:line 87
+[2025-12-29 13:04:51 WRN] Abandoning message for retry | Attempt: 1/3
+[2025-12-29 13:04:51 INF] Received message | MessageId: d9f98315-b3f0-4a4e-9174-9f41640ae3aa | CorrelationId: 0f281e37-e5d3-4df0-a207-231ee70587b8
+[2025-12-29 13:04:51 INF] Processing policy POL-20251229-4C6859C2 | PolicyId: "c7b5758c-42aa-414c-863a-c00845202d91"
+[2025-12-29 13:04:51 INF] Generated file | Name: POLICY_20251229_050451_0f281e37.txt | Policy: POL-20251229-4C6859C2
+[2025-12-29 13:04:51 INF] File generated: D:\PolicyBooking-FlatFiles\Outbound\POLICY_20251229_050451_0f281e37.txt
+[2025-12-29 13:04:51 INF] Calling End Booking System...
+[2025-12-29 13:04:51 INF] Calling End Booking System | PolicyId: "c7b5758c-42aa-414c-863a-c00845202d91"
+[2025-12-29 13:04:51 INF] Start processing HTTP request POST https://httpstat.us/api/bookings
+[2025-12-29 13:04:51 INF] Sending HTTP request POST https://httpstat.us/api/bookings
+[2025-12-29 13:04:52 INF] HTTP request failed after 685.2024ms
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+[2025-12-29 13:04:54 ERR] End Booking System call failed | PolicyId: "c7b5758c-42aa-414c-863a-c00845202d91"
+Polly.CircuitBreaker.BrokenCircuitException: The circuit is now open and is not allowing calls.
+ ---> System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   --- End of inner exception stack trace ---
+   at Polly.CircuitBreaker.CircuitStateController`1.OnActionPreExecute()
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at PolicyService.Infrastructure.ExternalServices.EndBookingSystemClient.SubmitPolicyAsync(BookingRequest request) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Infrastructure\ExternalServices\EndBookingSystemClient.cs:line 36
+[2025-12-29 13:04:54 ERR] CIRCUIT BREAKER IS OPEN | End Booking System is down
+[2025-12-29 13:04:54 ERR] Error processing message | MessageId: d9f98315-b3f0-4a4e-9174-9f41640ae3aa
+Polly.CircuitBreaker.BrokenCircuitException: The circuit is now open and is not allowing calls.
+ ---> System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   --- End of inner exception stack trace ---
+   at Polly.CircuitBreaker.CircuitStateController`1.OnActionPreExecute()
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at PolicyService.Infrastructure.ExternalServices.EndBookingSystemClient.SubmitPolicyAsync(BookingRequest request) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Infrastructure\ExternalServices\EndBookingSystemClient.cs:line 36
+   at PolicyService.Worker.Services.PolicyProcessingService.ProcessPolicyAsync(ProcessMessageEventArgs args, CancellationToken cancellationToken) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Services\PolicyProcessingService.cs:line 87
+[2025-12-29 13:04:54 WRN] Abandoning message for retry | Attempt: 2/3
+[2025-12-29 13:04:54 INF] Received message | MessageId: d9f98315-b3f0-4a4e-9174-9f41640ae3aa | CorrelationId: 0f281e37-e5d3-4df0-a207-231ee70587b8
+[2025-12-29 13:04:54 INF] Processing policy POL-20251229-4C6859C2 | PolicyId: "c7b5758c-42aa-414c-863a-c00845202d91"
+[2025-12-29 13:04:54 INF] Generated file | Name: POLICY_20251229_050454_0f281e37.txt | Policy: POL-20251229-4C6859C2
+[2025-12-29 13:04:54 INF] File generated: D:\PolicyBooking-FlatFiles\Outbound\POLICY_20251229_050454_0f281e37.txt
+[2025-12-29 13:04:54 INF] Calling End Booking System...
+[2025-12-29 13:04:54 INF] Calling End Booking System | PolicyId: "c7b5758c-42aa-414c-863a-c00845202d91"
+[2025-12-29 13:04:54 INF] Start processing HTTP request POST https://httpstat.us/api/bookings
+[2025-12-29 13:04:54 ERR] End Booking System call failed | PolicyId: "c7b5758c-42aa-414c-863a-c00845202d91"
+Polly.CircuitBreaker.BrokenCircuitException: The circuit is now open and is not allowing calls.
+ ---> System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   --- End of inner exception stack trace ---
+   at Polly.CircuitBreaker.CircuitStateController`1.OnActionPreExecute()
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at PolicyService.Infrastructure.ExternalServices.EndBookingSystemClient.SubmitPolicyAsync(BookingRequest request) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Infrastructure\ExternalServices\EndBookingSystemClient.cs:line 36
+[2025-12-29 13:04:54 ERR] CIRCUIT BREAKER IS OPEN | End Booking System is down
+[2025-12-29 13:04:54 ERR] Error processing message | MessageId: d9f98315-b3f0-4a4e-9174-9f41640ae3aa
+Polly.CircuitBreaker.BrokenCircuitException: The circuit is now open and is not allowing calls.
+ ---> System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   --- End of inner exception stack trace ---
+   at Polly.CircuitBreaker.CircuitStateController`1.OnActionPreExecute()
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at PolicyService.Infrastructure.ExternalServices.EndBookingSystemClient.SubmitPolicyAsync(BookingRequest request) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Infrastructure\ExternalServices\EndBookingSystemClient.cs:line 36
+   at PolicyService.Worker.Services.PolicyProcessingService.ProcessPolicyAsync(ProcessMessageEventArgs args, CancellationToken cancellationToken) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Services\PolicyProcessingService.cs:line 87
+[2025-12-29 13:04:54 ERR] Moving to dead letter queue after 3 attempts
+[2025-12-29 13:05:07 DBG] Heartbeat
+[2025-12-29 13:05:37 DBG] Heartbeat
+[2025-12-29 13:06:07 DBG] Heartbeat
+[2025-12-29 13:06:37 DBG] Heartbeat
+[2025-12-29 13:07:07 DBG] Heartbeat
+[2025-12-29 13:07:37 DBG] Heartbeat
+[2025-12-29 13:08:07 DBG] Heartbeat
+[2025-12-29 13:08:37 DBG] Heartbeat
+[2025-12-29 13:09:07 DBG] Heartbeat
+[2025-12-29 13:09:37 DBG] Heartbeat
+[2025-12-29 13:14:15 INF] ========================================
+[2025-12-29 13:14:15 INF] Starting Policy Processing Worker
+[2025-12-29 13:14:15 INF] ========================================
+[2025-12-29 13:14:16 INF] Configuration files loaded
+[2025-12-29 13:14:16 INF] Key Vault URL from config: https://kv-policyservice-dev.vault.azure.net/
+[2025-12-29 13:14:16 INF] Attempting to connect to Key Vault...
+[2025-12-29 13:50:16 INF] ========================================
+[2025-12-29 13:50:16 INF] Starting Policy Processing Worker
+[2025-12-29 13:50:16 INF] ========================================
+[2025-12-29 13:50:17 FTL] Worker terminated unexpectedly
+System.IO.InvalidDataException: Failed to load configuration from file 'D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\appsettings.json'.
+ ---> System.FormatException: A duplicate key 'Processing:SimulateEndBookingSystemDelay' was found.
+   at Microsoft.Extensions.Configuration.Json.JsonConfigurationFileParser.VisitValue(JsonElement value)
+   at Microsoft.Extensions.Configuration.Json.JsonConfigurationFileParser.VisitObjectElement(JsonElement element)
+   at Microsoft.Extensions.Configuration.Json.JsonConfigurationFileParser.VisitValue(JsonElement value)
+   at Microsoft.Extensions.Configuration.Json.JsonConfigurationFileParser.VisitObjectElement(JsonElement element)
+   at Microsoft.Extensions.Configuration.Json.JsonConfigurationFileParser.ParseStream(Stream input)
+   at Microsoft.Extensions.Configuration.Json.JsonConfigurationFileParser.Parse(Stream input)
+   at Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider.Load(Stream stream)
+   at Microsoft.Extensions.Configuration.FileConfigurationProvider.Load(Boolean reload)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Configuration.FileConfigurationProvider.HandleException(ExceptionDispatchInfo info)
+   at Microsoft.Extensions.Configuration.FileConfigurationProvider.Load(Boolean reload)
+   at Microsoft.Extensions.Configuration.FileConfigurationProvider.Load()
+   at Microsoft.Extensions.Configuration.ConfigurationManager.AddSource(IConfigurationSource source)
+   at Microsoft.Extensions.Configuration.ConfigurationManager.ConfigurationSources.Add(IConfigurationSource source)
+   at Microsoft.Extensions.Configuration.ConfigurationManager.Microsoft.Extensions.Configuration.IConfigurationBuilder.Add(IConfigurationSource source)
+   at Microsoft.Extensions.Configuration.ConfigurationExtensions.Add[TSource](IConfigurationBuilder builder, Action`1 configureSource)
+   at Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile(IConfigurationBuilder builder, Action`1 configureSource)
+   at Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile(IConfigurationBuilder builder, IFileProvider provider, String path, Boolean optional, Boolean reloadOnChange)
+   at Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile(IConfigurationBuilder builder, String path, Boolean optional, Boolean reloadOnChange)
+   at Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.ApplyDefaultAppConfiguration(HostBuilderContext hostingContext, IConfigurationBuilder appConfigBuilder, String[] args)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder..ctor(HostApplicationBuilderSettings settings)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder..ctor(String[] args)
+   at Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder(String[] args)
+   at Program.<Main>$(String[] args) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Program.cs:line 31
+[2025-12-29 13:50:18 FTL] Press any key to exit...
+[2025-12-29 13:51:57 INF] ========================================
+[2025-12-29 13:51:58 INF] Starting Policy Processing Worker
+[2025-12-29 13:51:58 INF] ========================================
+[2025-12-29 13:52:00 INF] Configuration files loaded
+[2025-12-29 13:52:00 INF] Key Vault URL from config: https://kv-policyservice-dev.vault.azure.net/
+[2025-12-29 13:52:00 INF] Attempting to connect to Key Vault...
+[2025-12-29 13:52:03 INF] Azure Key Vault configured
+[2025-12-29 13:52:03 INF] Serilog configured
+[2025-12-29 13:52:03 INF] Use Azure SQL: true
+[2025-12-29 13:52:03 INF] Database connection string found (length: 250)
+[2025-12-29 13:52:03 INF] Database context configured
+[2025-12-29 13:52:03 INF] Processing services registered
+[2025-12-29 13:52:03 INF] Worker service registered
+[2025-12-29 13:52:03 INF] ========================================
+[2025-12-29 13:52:03 INF] Worker configured successfully
+[2025-12-29 13:52:03 INF] ========================================
+[2025-12-29 13:52:03 INF] Policy Processing Worker starting...
+[2025-12-29 13:52:04 INF] Worker started | Queue: policy-processing-queue | MaxConcurrent: 5
+[2025-12-29 13:52:04 INF] Listening for messages...
+[2025-12-29 13:52:34 DBG] Heartbeat
+[2025-12-29 13:53:57 DBG] Heartbeat
+[2025-12-29 13:56:16 DBG] Heartbeat
+[2025-12-29 13:58:45 DBG] Heartbeat
+[2025-12-29 13:59:30 DBG] Heartbeat
+[2025-12-29 14:02:20 DBG] Heartbeat
+[2025-12-29 14:02:50 DBG] Heartbeat
+[2025-12-29 14:03:20 DBG] Heartbeat
+[2025-12-29 14:05:21 DBG] Heartbeat
+[2025-12-29 14:06:04 DBG] Heartbeat
+[2025-12-29 14:06:44 DBG] Heartbeat
+[2025-12-29 14:06:51 INF] Received message | MessageId: cab8013e-770c-4239-b076-d85dd1e697ef | CorrelationId: 96d2a5c7-d10d-4aca-852d-4f666c55125b
+[2025-12-29 14:07:00 INF] Processing policy POL-20251229-4812A280 | PolicyId: "94768297-f301-4dab-8f79-b54d963a7ff5"
+[2025-12-29 14:07:12 INF] Generated file | Name: POLICY_20251229_060707_96d2a5c7.txt | Policy: POL-20251229-4812A280
+[2025-12-29 14:07:14 INF] File generated: D:\PolicyBooking-FlatFiles\Outbound\POLICY_20251229_060707_96d2a5c7.txt
+[2025-12-29 14:07:14 DBG] Heartbeat
+[2025-12-29 14:07:23 INF] Calling End Booking System...
+[2025-12-29 14:07:23 INF] Calling End Booking System | PolicyId: "94768297-f301-4dab-8f79-b54d963a7ff5"
+[2025-12-29 14:07:23 INF] Start processing HTTP request POST https://jsonplaceholder.typicode.com/posts
+[2025-12-29 14:07:23 INF] Sending HTTP request POST https://jsonplaceholder.typicode.com/posts
+[2025-12-29 14:07:24 INF] Received HTTP response headers after 843.8951ms - 201
+[2025-12-29 14:07:24 INF] End processing HTTP request after 875.7868ms - 201
+[2025-12-29 14:07:24 INF] End Booking System response | Status: 
+[2025-12-29 14:07:32 INF] End Booking System responded | Status: 
+[2025-12-29 14:07:40 INF] Updated policy "94768297-f301-4dab-8f79-b54d963a7ff5" | Status: "Rejected"
+[2025-12-29 14:07:47 INF] Successfully processed policy POL-20251229-4812A280 | Status: Rejected
+[2025-12-29 14:07:51 DBG] Heartbeat
+[2025-12-29 14:08:24 DBG] Heartbeat
+[2025-12-29 14:08:57 DBG] Heartbeat
+[2025-12-29 14:09:30 DBG] Heartbeat
+[2025-12-29 14:10:00 DBG] Heartbeat
+[2025-12-29 14:10:30 DBG] Heartbeat
+[2025-12-29 14:11:00 DBG] Heartbeat
+[2025-12-29 14:11:30 DBG] Heartbeat
+[2025-12-29 14:12:00 DBG] Heartbeat
+[2025-12-29 14:12:30 DBG] Heartbeat
+[2025-12-29 14:13:00 DBG] Heartbeat
+[2025-12-29 14:13:30 DBG] Heartbeat
+[2025-12-29 14:14:00 DBG] Heartbeat
+[2025-12-29 14:14:30 DBG] Heartbeat
+[2025-12-29 14:15:00 DBG] Heartbeat
+[2025-12-29 14:15:30 DBG] Heartbeat
+[2025-12-29 14:16:00 DBG] Heartbeat
+[2025-12-29 14:16:30 DBG] Heartbeat
+[2025-12-29 14:17:00 DBG] Heartbeat
+[2025-12-29 14:17:30 DBG] Heartbeat
+[2025-12-29 14:18:00 DBG] Heartbeat
+[2025-12-29 14:18:30 DBG] Heartbeat
+[2025-12-29 14:19:00 DBG] Heartbeat
+[2025-12-29 14:19:30 DBG] Heartbeat
+[2025-12-29 14:20:00 DBG] Heartbeat
+[2025-12-29 14:20:30 DBG] Heartbeat
+[2025-12-29 14:21:00 DBG] Heartbeat
+[2025-12-29 14:21:30 DBG] Heartbeat
+[2025-12-29 14:22:00 DBG] Heartbeat
+[2025-12-29 14:22:30 DBG] Heartbeat
+[2025-12-29 14:23:00 DBG] Heartbeat
+[2025-12-29 14:23:30 DBG] Heartbeat
+[2025-12-29 14:29:14 DBG] Heartbeat
+[2025-12-29 14:29:44 DBG] Heartbeat
+[2025-12-29 14:30:14 DBG] Heartbeat
+[2025-12-29 14:30:44 DBG] Heartbeat
+[2025-12-29 14:31:14 DBG] Heartbeat
+[2025-12-29 14:31:44 DBG] Heartbeat
+[2025-12-29 14:32:14 DBG] Heartbeat
+[2025-12-29 14:32:44 DBG] Heartbeat
+[2025-12-29 14:33:14 DBG] Heartbeat
+[2025-12-29 14:33:44 DBG] Heartbeat
+[2025-12-29 14:34:14 DBG] Heartbeat
+[2025-12-29 14:34:47 INF] ========================================
+[2025-12-29 14:34:47 INF] Starting Policy Processing Worker
+[2025-12-29 14:34:47 INF] ========================================
+[2025-12-29 14:34:47 INF] Configuration files loaded
+[2025-12-29 14:34:47 INF] Key Vault URL from config: https://kv-policyservice-dev.vault.azure.net/
+[2025-12-29 14:34:47 INF] Attempting to connect to Key Vault...
+[2025-12-29 14:34:57 INF] Azure Key Vault configured
+[2025-12-29 14:34:57 INF] Serilog configured
+[2025-12-29 14:34:57 INF] Use Azure SQL: true
+[2025-12-29 14:34:57 INF] Database connection string found (length: 250)
+[2025-12-29 14:34:57 INF] Database context configured
+[2025-12-29 14:34:57 INF] Processing services registered
+[2025-12-29 14:34:57 INF] Worker service registered
+[2025-12-29 14:34:57 INF] ========================================
+[2025-12-29 14:34:57 INF] Worker configured successfully
+[2025-12-29 14:34:57 INF] ========================================
+[2025-12-29 14:34:58 INF] Policy Processing Worker starting...
+[2025-12-29 14:34:58 INF] Worker started | Queue: policy-processing-queue | MaxConcurrent: 5
+[2025-12-29 14:34:58 INF] Listening for messages...
+[2025-12-29 14:38:22 INF] ========================================
+[2025-12-29 14:38:22 INF] Starting Policy Processing Worker
+[2025-12-29 14:38:22 INF] ========================================
+[2025-12-29 14:38:22 INF] Configuration files loaded
+[2025-12-29 14:38:22 INF] Key Vault URL from config: https://kv-policyservice-dev.vault.azure.net/
+[2025-12-29 14:38:22 INF] Attempting to connect to Key Vault...
+[2025-12-29 14:38:30 INF] Azure Key Vault configured
+[2025-12-29 14:38:30 INF] Serilog configured
+[2025-12-29 14:38:30 INF] Use Azure SQL: true
+[2025-12-29 14:38:30 INF] Database connection string found (length: 250)
+[2025-12-29 14:38:30 INF] Database context configured
+[2025-12-29 14:38:30 INF] Processing services registered
+[2025-12-29 14:38:30 INF] Worker service registered
+[2025-12-29 14:38:30 INF] ========================================
+[2025-12-29 14:38:30 INF] Worker configured successfully
+[2025-12-29 14:38:30 INF] ========================================
+[2025-12-29 14:38:30 INF] Policy Processing Worker starting...
+[2025-12-29 14:38:30 INF] Worker started | Queue: policy-processing-queue | MaxConcurrent: 5
+[2025-12-29 14:38:30 INF] Listening for messages...
+[2025-12-29 14:38:38 INF] Received message | MessageId: b747d65a-78f7-479e-a040-1d592d7eab1d | CorrelationId: 3666bddd-7229-4fca-ab31-625b28867d3b
+[2025-12-29 14:39:07 DBG] Heartbeat
+[2025-12-29 14:39:07 INF] Processing policy POL-20251229-044AAB42 | PolicyId: "f452fc2a-8fcb-42b1-9e30-9eb07e2e78d0"
+[2025-12-29 14:39:12 INF] Generated file | Name: POLICY_20251229_063912_3666bddd.txt | Policy: POL-20251229-044AAB42
+[2025-12-29 14:39:13 INF] File generated: D:\PolicyBooking-FlatFiles\Outbound\POLICY_20251229_063912_3666bddd.txt
+[2025-12-29 14:39:18 INF] Calling End Booking System...
+[2025-12-29 14:39:21 INF] Calling End Booking System | PolicyId: "f452fc2a-8fcb-42b1-9e30-9eb07e2e78d0"
+[2025-12-29 14:39:30 INF] Start processing HTTP request POST https://jsonplaceholder.typicode.com/posts
+[2025-12-29 14:39:30 INF] Sending HTTP request POST https://jsonplaceholder.typicode.com/posts
+[2025-12-29 14:39:31 INF] Received HTTP response headers after 841.7216ms - 201
+[2025-12-29 14:39:31 INF] End processing HTTP request after 900.3645ms - 201
+[2025-12-29 14:40:48 DBG] Heartbeat
+[2025-12-29 14:40:50 INF] End Booking System response | Status: 
+[2025-12-29 14:40:56 INF] End Booking System responded | Status: 
+[2025-12-29 14:41:00 INF] Updated policy "f452fc2a-8fcb-42b1-9e30-9eb07e2e78d0" | Status: "Rejected"
+[2025-12-29 14:41:51 DBG] Heartbeat
+[2025-12-29 14:42:17 ERR] Error processing message | MessageId: b747d65a-78f7-479e-a040-1d592d7eab1d
+Azure.Messaging.ServiceBus.ServiceBusException: The lock supplied is invalid. Either the lock expired, or the message has already been removed from the queue. For more information please see https://aka.ms/ServiceBusExceptions . Reference:b83b463b-856b-485b-9517-02cff6fa2ecf, TrackingId:a2ba13a6-07c2-408c-84fb-d6fb1e921197_B14, SystemTracker:sb-policyservice-dev:Queue:policy-processing-queue, Timestamp:2025-12-29T06:42:05 (MessageLockLost). For troubleshooting information, see https://aka.ms/azsdk/net/servicebus/exceptions/troubleshoot.
+   at Azure.Messaging.ServiceBus.Amqp.AmqpReceiver.DisposeMessageRequestResponseAsync(Guid lockToken, TimeSpan timeout, DispositionStatus dispositionStatus, String sessionId, IDictionary`2 propertiesToModify, String deadLetterReason, String deadLetterDescription)
+   at Azure.Messaging.ServiceBus.Amqp.AmqpReceiver.DisposeMessageAsync(Guid lockToken, Outcome outcome, DispositionStatus disposition, TimeSpan timeout, IDictionary`2 propertiesToModify, String deadLetterReason, String deadLetterDescription)
+   at Azure.Messaging.ServiceBus.Amqp.AmqpReceiver.CompleteInternalAsync(Guid lockToken, TimeSpan timeout)
+   at Azure.Messaging.ServiceBus.Amqp.AmqpReceiver.<>c.<<CompleteAsync>b__47_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Azure.Messaging.ServiceBus.ServiceBusRetryPolicy.<>c__23`1.<<RunOperation>b__23_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Azure.Messaging.ServiceBus.ServiceBusRetryPolicy.RunOperation[T1,TResult](Func`4 operation, T1 t1, TransportConnectionScope scope, CancellationToken cancellationToken, Boolean logTimeoutRetriesAsVerbose)
+   at Azure.Messaging.ServiceBus.ServiceBusRetryPolicy.RunOperation[T1,TResult](Func`4 operation, T1 t1, TransportConnectionScope scope, CancellationToken cancellationToken, Boolean logTimeoutRetriesAsVerbose)
+   at Azure.Messaging.ServiceBus.ServiceBusRetryPolicy.RunOperation[T1](Func`4 operation, T1 t1, TransportConnectionScope scope, CancellationToken cancellationToken)
+   at Azure.Messaging.ServiceBus.Amqp.AmqpReceiver.CompleteAsync(Guid lockToken, CancellationToken cancellationToken)
+   at Azure.Messaging.ServiceBus.ServiceBusReceiver.CompleteMessageAsync(ServiceBusReceivedMessage message, CancellationToken cancellationToken)
+   at Azure.Messaging.ServiceBus.ProcessMessageEventArgs.CompleteMessageAsync(ServiceBusReceivedMessage message, CancellationToken cancellationToken)
+   at PolicyService.Worker.Services.PolicyProcessingService.ProcessPolicyAsync(ProcessMessageEventArgs args, CancellationToken cancellationToken) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Services\PolicyProcessingService.cs:line 115
+[2025-12-29 14:42:26 DBG] Heartbeat
+[2025-12-29 14:42:29 WRN] Abandoning message for retry | Attempt: 1/3
+[2025-12-29 15:04:22 INF] ========================================
+[2025-12-29 15:04:22 INF] Starting Policy Processing Worker
+[2025-12-29 15:04:22 INF] ========================================
+[2025-12-29 15:04:22 FTL] Worker terminated unexpectedly
+System.IO.InvalidDataException: Failed to load configuration from file 'D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\appsettings.json'.
+ ---> System.FormatException: Could not parse the JSON file.
+ ---> System.Text.Json.JsonReaderException: '"' is invalid after a property name. Expected a ':'. LineNumber: 34 | BytePositionInLine: 10.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumePropertyName()
+   at System.Text.Json.Utf8JsonReader.ConsumeNextTokenUntilAfterAllCommentsAreSkipped(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextTokenOrRollback(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.JsonDocument.Parse(ReadOnlySpan`1 utf8JsonSpan, JsonReaderOptions readerOptions, MetadataDb& database, StackRowStack& stack)
+   at System.Text.Json.JsonDocument.Parse(ReadOnlyMemory`1 utf8Json, JsonReaderOptions readerOptions, Byte[] extraRentedArrayPoolBytes, PooledByteBufferWriter extraPooledByteBufferWriter)
+   at System.Text.Json.JsonDocument.Parse(ReadOnlyMemory`1 json, JsonDocumentOptions options)
+   at System.Text.Json.JsonDocument.Parse(String json, JsonDocumentOptions options)
+   at Microsoft.Extensions.Configuration.Json.JsonConfigurationFileParser.ParseStream(Stream input)
+   at Microsoft.Extensions.Configuration.Json.JsonConfigurationFileParser.Parse(Stream input)
+   at Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider.Load(Stream stream)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider.Load(Stream stream)
+   at Microsoft.Extensions.Configuration.FileConfigurationProvider.Load(Boolean reload)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Configuration.FileConfigurationProvider.HandleException(ExceptionDispatchInfo info)
+   at Microsoft.Extensions.Configuration.FileConfigurationProvider.Load(Boolean reload)
+   at Microsoft.Extensions.Configuration.FileConfigurationProvider.Load()
+   at Microsoft.Extensions.Configuration.ConfigurationManager.AddSource(IConfigurationSource source)
+   at Microsoft.Extensions.Configuration.ConfigurationManager.ConfigurationSources.Add(IConfigurationSource source)
+   at Microsoft.Extensions.Configuration.ConfigurationManager.Microsoft.Extensions.Configuration.IConfigurationBuilder.Add(IConfigurationSource source)
+   at Microsoft.Extensions.Configuration.ConfigurationExtensions.Add[TSource](IConfigurationBuilder builder, Action`1 configureSource)
+   at Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile(IConfigurationBuilder builder, Action`1 configureSource)
+   at Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile(IConfigurationBuilder builder, IFileProvider provider, String path, Boolean optional, Boolean reloadOnChange)
+   at Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile(IConfigurationBuilder builder, String path, Boolean optional, Boolean reloadOnChange)
+   at Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.ApplyDefaultAppConfiguration(HostBuilderContext hostingContext, IConfigurationBuilder appConfigBuilder, String[] args)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder..ctor(HostApplicationBuilderSettings settings)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder..ctor(String[] args)
+   at Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder(String[] args)
+   at Program.<Main>$(String[] args) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Program.cs:line 31
+[2025-12-29 15:04:22 FTL] Press any key to exit...
+[2025-12-29 15:04:48 INF] ========================================
+[2025-12-29 15:04:48 INF] Starting Policy Processing Worker
+[2025-12-29 15:04:48 INF] ========================================
+[2025-12-29 15:04:48 FTL] Worker terminated unexpectedly
+System.IO.InvalidDataException: Failed to load configuration from file 'D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\appsettings.json'.
+ ---> System.FormatException: Could not parse the JSON file.
+ ---> System.Text.Json.JsonReaderException: '"' is invalid after a property name. Expected a ':'. LineNumber: 34 | BytePositionInLine: 10.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumePropertyName()
+   at System.Text.Json.Utf8JsonReader.ConsumeNextTokenUntilAfterAllCommentsAreSkipped(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextTokenOrRollback(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.JsonDocument.Parse(ReadOnlySpan`1 utf8JsonSpan, JsonReaderOptions readerOptions, MetadataDb& database, StackRowStack& stack)
+   at System.Text.Json.JsonDocument.Parse(ReadOnlyMemory`1 utf8Json, JsonReaderOptions readerOptions, Byte[] extraRentedArrayPoolBytes, PooledByteBufferWriter extraPooledByteBufferWriter)
+   at System.Text.Json.JsonDocument.Parse(ReadOnlyMemory`1 json, JsonDocumentOptions options)
+   at System.Text.Json.JsonDocument.Parse(String json, JsonDocumentOptions options)
+   at Microsoft.Extensions.Configuration.Json.JsonConfigurationFileParser.ParseStream(Stream input)
+   at Microsoft.Extensions.Configuration.Json.JsonConfigurationFileParser.Parse(Stream input)
+   at Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider.Load(Stream stream)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider.Load(Stream stream)
+   at Microsoft.Extensions.Configuration.FileConfigurationProvider.Load(Boolean reload)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Configuration.FileConfigurationProvider.HandleException(ExceptionDispatchInfo info)
+   at Microsoft.Extensions.Configuration.FileConfigurationProvider.Load(Boolean reload)
+   at Microsoft.Extensions.Configuration.FileConfigurationProvider.Load()
+   at Microsoft.Extensions.Configuration.ConfigurationManager.AddSource(IConfigurationSource source)
+   at Microsoft.Extensions.Configuration.ConfigurationManager.ConfigurationSources.Add(IConfigurationSource source)
+   at Microsoft.Extensions.Configuration.ConfigurationManager.Microsoft.Extensions.Configuration.IConfigurationBuilder.Add(IConfigurationSource source)
+   at Microsoft.Extensions.Configuration.ConfigurationExtensions.Add[TSource](IConfigurationBuilder builder, Action`1 configureSource)
+   at Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile(IConfigurationBuilder builder, Action`1 configureSource)
+   at Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile(IConfigurationBuilder builder, IFileProvider provider, String path, Boolean optional, Boolean reloadOnChange)
+   at Microsoft.Extensions.Configuration.JsonConfigurationExtensions.AddJsonFile(IConfigurationBuilder builder, String path, Boolean optional, Boolean reloadOnChange)
+   at Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.ApplyDefaultAppConfiguration(HostBuilderContext hostingContext, IConfigurationBuilder appConfigBuilder, String[] args)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder..ctor(HostApplicationBuilderSettings settings)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder..ctor(String[] args)
+   at Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder(String[] args)
+   at Program.<Main>$(String[] args) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Program.cs:line 31
+[2025-12-29 15:04:48 FTL] Press any key to exit...
+[2025-12-29 15:07:45 INF] ========================================
+[2025-12-29 15:07:45 INF] Starting Policy Processing Worker
+[2025-12-29 15:07:45 INF] ========================================
+[2025-12-29 15:07:45 INF] Configuration files loaded
+[2025-12-29 15:07:45 INF] Key Vault URL from config: https://kv-policyservice-dev.vault.azure.net/
+[2025-12-29 15:07:45 INF] Attempting to connect to Key Vault...
+[2025-12-29 15:07:51 INF] Azure Key Vault configured
+[2025-12-29 15:07:51 INF] Serilog configured
+[2025-12-29 15:07:51 INF] Use Azure SQL: true
+[2025-12-29 15:07:51 INF] Database connection string found (length: 250)
+[2025-12-29 15:07:51 INF] Database context configured
+[2025-12-29 15:08:22 INF] Processing services registered
+[2025-12-29 15:08:23 INF] Worker service registered
+[2025-12-29 15:08:24 INF] ========================================
+[2025-12-29 15:08:25 INF] Worker configured successfully
+[2025-12-29 15:08:26 INF] ========================================
+[2025-12-29 15:08:26 INF] Policy Processing Worker starting...
+[2025-12-29 15:08:26 INF] Worker started | Queue: policy-processing-queue | MaxConcurrent: 5
+[2025-12-29 15:08:26 INF] Listening for messages...
+[2025-12-29 15:08:34 INF] Received message | MessageId: 15fe465d-16c1-47b9-a2e1-5f665d337b20 | CorrelationId: c9abe0ab-309e-47b8-8143-f75bb7a5249b
+[2025-12-29 15:08:47 INF] Processing policy POL-20251229-5548BE73 | PolicyId: "ca8efdf4-9d02-496a-b94d-c96bd57e4bfd"
+[2025-12-29 15:08:50 INF] Generated file | Name: POLICY_20251229_070850_c9abe0ab.txt | Policy: POL-20251229-5548BE73
+[2025-12-29 15:08:51 INF] File generated: D:\PolicyBooking-FlatFiles\Outbound\POLICY_20251229_070850_c9abe0ab.txt
+[2025-12-29 15:08:56 INF] Calling End Booking System...
+[2025-12-29 15:08:57 DBG] Heartbeat
+[2025-12-29 15:08:58 INF] Calling End Booking System | PolicyId: "ca8efdf4-9d02-496a-b94d-c96bd57e4bfd"
+[2025-12-29 15:09:01 INF] Start processing HTTP request POST https://httpstat.us/posts
+[2025-12-29 15:09:01 INF] Sending HTTP request POST https://httpstat.us/posts
+[2025-12-29 15:09:02 INF] HTTP request failed after 994.3107ms
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+[2025-12-29 15:09:04 INF] Sending HTTP request POST https://httpstat.us/posts
+[2025-12-29 15:09:05 INF] HTTP request failed after 768.8614ms
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+[2025-12-29 15:09:09 INF] Sending HTTP request POST https://httpstat.us/posts
+[2025-12-29 15:09:09 INF] HTTP request failed after 683.0678ms
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+[2025-12-29 15:09:17 INF] Sending HTTP request POST https://httpstat.us/posts
+[2025-12-29 15:09:18 INF] HTTP request failed after 752.2119ms
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+[2025-12-29 15:09:18 INF] HTTP request failed after 17330.6622ms
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+[2025-12-29 15:09:22 ERR] End Booking System call failed | PolicyId: "ca8efdf4-9d02-496a-b94d-c96bd57e4bfd"
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at PolicyService.Infrastructure.ExternalServices.EndBookingSystemClient.SubmitPolicyAsync(BookingRequest request) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Infrastructure\ExternalServices\EndBookingSystemClient.cs:line 36
+[2025-12-29 15:09:23 ERR] End Booking System call failed
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at PolicyService.Infrastructure.ExternalServices.EndBookingSystemClient.SubmitPolicyAsync(BookingRequest request) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Infrastructure\ExternalServices\EndBookingSystemClient.cs:line 36
+   at PolicyService.Worker.Services.PolicyProcessingService.ProcessPolicyAsync(ProcessMessageEventArgs args, CancellationToken cancellationToken) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Services\PolicyProcessingService.cs:line 87
+[2025-12-29 15:09:23 ERR] Error processing message | MessageId: 15fe465d-16c1-47b9-a2e1-5f665d337b20
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at PolicyService.Infrastructure.ExternalServices.EndBookingSystemClient.SubmitPolicyAsync(BookingRequest request) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Infrastructure\ExternalServices\EndBookingSystemClient.cs:line 36
+   at PolicyService.Worker.Services.PolicyProcessingService.ProcessPolicyAsync(ProcessMessageEventArgs args, CancellationToken cancellationToken) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Services\PolicyProcessingService.cs:line 87
+[2025-12-29 15:09:23 WRN] Abandoning message for retry | Attempt: 1/3
+[2025-12-29 15:09:27 INF] Received message | MessageId: 15fe465d-16c1-47b9-a2e1-5f665d337b20 | CorrelationId: c9abe0ab-309e-47b8-8143-f75bb7a5249b
+[2025-12-29 15:09:32 DBG] Heartbeat
+[2025-12-29 15:09:33 INF] Processing policy POL-20251229-5548BE73 | PolicyId: "ca8efdf4-9d02-496a-b94d-c96bd57e4bfd"
+[2025-12-29 15:09:37 INF] Generated file | Name: POLICY_20251229_070937_c9abe0ab.txt | Policy: POL-20251229-5548BE73
+[2025-12-29 15:09:38 INF] File generated: D:\PolicyBooking-FlatFiles\Outbound\POLICY_20251229_070937_c9abe0ab.txt
+[2025-12-29 15:09:43 INF] Calling End Booking System...
+[2025-12-29 15:09:44 INF] Calling End Booking System | PolicyId: "ca8efdf4-9d02-496a-b94d-c96bd57e4bfd"
+[2025-12-29 15:09:44 INF] Start processing HTTP request POST https://httpstat.us/posts
+[2025-12-29 15:09:44 INF] Sending HTTP request POST https://httpstat.us/posts
+[2025-12-29 15:09:45 INF] HTTP request failed after 873.8738ms
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+[2025-12-29 15:09:47 ERR] End Booking System call failed | PolicyId: "ca8efdf4-9d02-496a-b94d-c96bd57e4bfd"
+Polly.CircuitBreaker.BrokenCircuitException: The circuit is now open and is not allowing calls.
+ ---> System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   --- End of inner exception stack trace ---
+   at Polly.CircuitBreaker.CircuitStateController`1.OnActionPreExecute()
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at PolicyService.Infrastructure.ExternalServices.EndBookingSystemClient.SubmitPolicyAsync(BookingRequest request) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Infrastructure\ExternalServices\EndBookingSystemClient.cs:line 36
+[2025-12-29 15:09:58 ERR] CIRCUIT BREAKER IS OPEN | End Booking System is down
+[2025-12-29 15:10:59 ERR] Error processing message | MessageId: 15fe465d-16c1-47b9-a2e1-5f665d337b20
+Polly.CircuitBreaker.BrokenCircuitException: The circuit is now open and is not allowing calls.
+ ---> System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   --- End of inner exception stack trace ---
+   at Polly.CircuitBreaker.CircuitStateController`1.OnActionPreExecute()
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at PolicyService.Infrastructure.ExternalServices.EndBookingSystemClient.SubmitPolicyAsync(BookingRequest request) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Infrastructure\ExternalServices\EndBookingSystemClient.cs:line 36
+   at PolicyService.Worker.Services.PolicyProcessingService.ProcessPolicyAsync(ProcessMessageEventArgs args, CancellationToken cancellationToken) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Services\PolicyProcessingService.cs:line 87
+[2025-12-29 15:10:59 DBG] Heartbeat
+[2025-12-29 15:11:03 WRN] Abandoning message for retry | Attempt: 2/3
+[2025-12-29 15:11:11 INF] Received message | MessageId: 15fe465d-16c1-47b9-a2e1-5f665d337b20 | CorrelationId: c9abe0ab-309e-47b8-8143-f75bb7a5249b
+[2025-12-29 15:11:11 INF] Processing policy POL-20251229-5548BE73 | PolicyId: "ca8efdf4-9d02-496a-b94d-c96bd57e4bfd"
+[2025-12-29 15:11:12 INF] Generated file | Name: POLICY_20251229_071112_c9abe0ab.txt | Policy: POL-20251229-5548BE73
+[2025-12-29 15:11:12 INF] File generated: D:\PolicyBooking-FlatFiles\Outbound\POLICY_20251229_071112_c9abe0ab.txt
+[2025-12-29 15:11:13 INF] Calling End Booking System...
+[2025-12-29 15:11:13 INF] Calling End Booking System | PolicyId: "ca8efdf4-9d02-496a-b94d-c96bd57e4bfd"
+[2025-12-29 15:11:13 INF] Start processing HTTP request POST https://httpstat.us/posts
+[2025-12-29 15:11:13 INF] Sending HTTP request POST https://httpstat.us/posts
+[2025-12-29 15:11:14 INF] HTTP request failed after 750.3089ms
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+[2025-12-29 15:11:16 ERR] End Booking System call failed | PolicyId: "ca8efdf4-9d02-496a-b94d-c96bd57e4bfd"
+Polly.CircuitBreaker.BrokenCircuitException: The circuit is now open and is not allowing calls.
+ ---> System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   --- End of inner exception stack trace ---
+   at Polly.CircuitBreaker.CircuitStateController`1.OnActionPreExecute()
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at PolicyService.Infrastructure.ExternalServices.EndBookingSystemClient.SubmitPolicyAsync(BookingRequest request) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Infrastructure\ExternalServices\EndBookingSystemClient.cs:line 36
+[2025-12-29 15:11:16 ERR] CIRCUIT BREAKER IS OPEN | End Booking System is down
+[2025-12-29 15:11:16 ERR] Error processing message | MessageId: 15fe465d-16c1-47b9-a2e1-5f665d337b20
+Polly.CircuitBreaker.BrokenCircuitException: The circuit is now open and is not allowing calls.
+ ---> System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.Net.Http.HttpIOException: The response ended prematurely. (ResponseEnded)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   --- End of inner exception stack trace ---
+   at Polly.CircuitBreaker.CircuitStateController`1.OnActionPreExecute()
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendCoreAsync(HttpRequestMessage request, Context context, CancellationToken cancellationToken)
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy`1.ExecuteAsync(Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Microsoft.Extensions.Http.PolicyHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at PolicyService.Infrastructure.ExternalServices.EndBookingSystemClient.SubmitPolicyAsync(BookingRequest request) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Infrastructure\ExternalServices\EndBookingSystemClient.cs:line 36
+   at PolicyService.Worker.Services.PolicyProcessingService.ProcessPolicyAsync(ProcessMessageEventArgs args, CancellationToken cancellationToken) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Services\PolicyProcessingService.cs:line 87
+[2025-12-29 15:11:16 ERR] Moving to dead letter queue after 3 attempts
+[2025-12-29 15:11:36 DBG] Heartbeat
+[2025-12-29 15:12:06 DBG] Heartbeat
+[2025-12-29 15:12:36 DBG] Heartbeat
+[2025-12-29 15:13:06 DBG] Heartbeat
+[2025-12-29 15:13:36 DBG] Heartbeat
+[2025-12-29 15:14:06 DBG] Heartbeat
+[2025-12-29 15:14:36 DBG] Heartbeat
+[2025-12-29 15:15:06 DBG] Heartbeat
+[2025-12-29 15:15:36 DBG] Heartbeat
+[2025-12-29 15:16:06 DBG] Heartbeat
+[2025-12-29 15:16:36 DBG] Heartbeat
+[2025-12-29 15:17:06 DBG] Heartbeat
+[2025-12-29 15:17:36 DBG] Heartbeat
+[2025-12-29 15:18:06 DBG] Heartbeat
+[2025-12-29 15:18:36 DBG] Heartbeat
+[2025-12-29 15:19:06 DBG] Heartbeat
+[2025-12-29 15:19:36 DBG] Heartbeat
+[2025-12-29 15:20:06 DBG] Heartbeat
+[2025-12-29 15:21:21 DBG] Heartbeat
+[2025-12-29 15:21:51 DBG] Heartbeat
+[2025-12-29 15:22:21 DBG] Heartbeat
+[2025-12-29 15:22:51 DBG] Heartbeat
+[2025-12-29 15:23:21 DBG] Heartbeat
+[2025-12-29 15:23:51 DBG] Heartbeat
+[2025-12-29 15:24:21 DBG] Heartbeat
+[2025-12-29 15:24:51 DBG] Heartbeat
+[2025-12-29 15:25:21 DBG] Heartbeat
+[2025-12-29 15:25:51 DBG] Heartbeat
+[2025-12-29 15:26:21 DBG] Heartbeat
+[2025-12-29 15:26:52 DBG] Heartbeat
+[2025-12-29 15:27:22 DBG] Heartbeat
+[2025-12-29 15:27:52 DBG] Heartbeat
+[2025-12-29 15:28:22 DBG] Heartbeat
+[2025-12-29 15:28:52 DBG] Heartbeat
+[2025-12-29 15:29:22 DBG] Heartbeat
+[2025-12-29 15:29:52 DBG] Heartbeat
+[2025-12-29 15:30:22 DBG] Heartbeat
+[2025-12-29 15:30:52 DBG] Heartbeat
+[2025-12-29 15:31:22 DBG] Heartbeat
+[2025-12-29 15:31:52 DBG] Heartbeat
+[2025-12-29 15:32:22 DBG] Heartbeat
+[2025-12-29 15:32:52 DBG] Heartbeat
+[2025-12-29 15:33:22 DBG] Heartbeat
+[2025-12-29 15:33:53 DBG] Heartbeat
+[2025-12-29 15:34:23 DBG] Heartbeat
+[2025-12-29 15:34:53 DBG] Heartbeat
+[2025-12-29 15:35:23 DBG] Heartbeat
+[2025-12-29 15:35:53 DBG] Heartbeat
+[2025-12-29 15:36:23 DBG] Heartbeat
+[2025-12-29 15:36:53 DBG] Heartbeat
+[2025-12-29 15:37:23 DBG] Heartbeat
+[2025-12-29 15:37:53 DBG] Heartbeat
+[2025-12-29 15:38:23 DBG] Heartbeat
+[2025-12-29 15:38:53 DBG] Heartbeat
+[2025-12-29 15:39:23 DBG] Heartbeat
+[2025-12-29 15:39:53 DBG] Heartbeat
+[2025-12-29 15:40:23 DBG] Heartbeat
+[2025-12-29 15:40:53 DBG] Heartbeat
+[2025-12-29 15:42:37 DBG] Heartbeat
+[2025-12-29 15:43:07 DBG] Heartbeat
+[2025-12-29 15:43:37 DBG] Heartbeat
+[2025-12-29 15:44:07 DBG] Heartbeat
+[2025-12-29 15:44:37 DBG] Heartbeat
+[2025-12-29 15:45:07 DBG] Heartbeat
+[2025-12-29 15:45:37 DBG] Heartbeat
+[2025-12-29 15:47:18 DBG] Heartbeat
+[2025-12-29 15:47:48 DBG] Heartbeat
+[2025-12-29 15:51:19 DBG] Heartbeat
+[2025-12-29 15:51:49 DBG] Heartbeat
+[2025-12-29 15:52:19 DBG] Heartbeat
+[2025-12-29 15:52:49 DBG] Heartbeat
+[2025-12-29 15:53:19 DBG] Heartbeat
+[2025-12-29 15:53:49 DBG] Heartbeat
+[2025-12-29 15:54:19 DBG] Heartbeat
+[2025-12-29 15:54:49 DBG] Heartbeat
+[2025-12-29 15:55:19 DBG] Heartbeat
+[2025-12-29 15:55:49 DBG] Heartbeat
+[2025-12-29 15:56:19 DBG] Heartbeat
+[2025-12-29 15:56:49 DBG] Heartbeat
+[2025-12-29 15:57:19 DBG] Heartbeat
+[2025-12-29 15:57:49 DBG] Heartbeat
+[2025-12-29 15:58:19 DBG] Heartbeat
+[2025-12-29 15:58:49 DBG] Heartbeat
+[2025-12-29 15:59:19 DBG] Heartbeat
+[2025-12-29 16:06:18 DBG] Heartbeat
+[2025-12-29 16:06:48 DBG] Heartbeat
+[2025-12-29 16:07:18 DBG] Heartbeat
+[2025-12-29 16:07:48 DBG] Heartbeat
+[2025-12-29 16:08:18 DBG] Heartbeat
+[2025-12-29 16:08:48 DBG] Heartbeat
+[2025-12-29 16:09:18 DBG] Heartbeat
+[2025-12-29 16:09:48 DBG] Heartbeat
+[2025-12-29 16:10:18 DBG] Heartbeat
+[2025-12-29 16:10:48 DBG] Heartbeat
+[2025-12-29 16:11:18 DBG] Heartbeat
+[2025-12-29 16:11:48 DBG] Heartbeat
+[2025-12-29 16:13:09 DBG] Heartbeat
+[2025-12-29 16:13:39 DBG] Heartbeat
+[2025-12-29 16:14:09 DBG] Heartbeat
+[2025-12-29 16:14:39 DBG] Heartbeat
+[2025-12-29 16:15:09 DBG] Heartbeat
+[2025-12-29 16:15:39 DBG] Heartbeat
+[2025-12-29 16:16:09 DBG] Heartbeat
+[2025-12-29 16:16:39 DBG] Heartbeat
+[2025-12-29 16:17:09 DBG] Heartbeat
+[2025-12-29 16:17:39 DBG] Heartbeat
+[2025-12-29 16:18:09 DBG] Heartbeat
+[2025-12-29 16:18:39 DBG] Heartbeat
+[2025-12-29 16:19:09 DBG] Heartbeat
+[2025-12-29 16:19:39 DBG] Heartbeat
+[2025-12-29 16:20:10 DBG] Heartbeat
+[2025-12-29 16:20:40 DBG] Heartbeat
+[2025-12-29 16:21:10 DBG] Heartbeat
+[2025-12-29 16:21:40 DBG] Heartbeat
+[2025-12-29 16:22:10 DBG] Heartbeat
+[2025-12-29 16:22:40 DBG] Heartbeat
+[2025-12-29 16:23:10 DBG] Heartbeat
+[2025-12-29 16:23:40 DBG] Heartbeat
+[2025-12-29 16:24:10 DBG] Heartbeat
+[2025-12-29 16:24:40 DBG] Heartbeat
+[2025-12-29 16:25:57 DBG] Heartbeat
+[2025-12-29 16:26:27 DBG] Heartbeat
+[2025-12-29 16:26:57 DBG] Heartbeat
+[2025-12-29 16:27:27 DBG] Heartbeat
+[2025-12-29 16:27:57 DBG] Heartbeat
+[2025-12-29 16:28:27 DBG] Heartbeat
+[2025-12-29 16:28:57 DBG] Heartbeat
+[2025-12-29 16:29:27 DBG] Heartbeat
+[2025-12-29 16:29:57 DBG] Heartbeat
+[2025-12-29 16:30:27 DBG] Heartbeat
+[2025-12-29 16:30:57 DBG] Heartbeat
+[2025-12-29 16:31:27 DBG] Heartbeat
+[2025-12-29 16:31:57 DBG] Heartbeat
+[2025-12-29 16:32:27 DBG] Heartbeat
+[2025-12-29 16:32:57 DBG] Heartbeat
+[2025-12-29 16:33:27 DBG] Heartbeat
+[2025-12-29 16:33:57 DBG] Heartbeat
+[2025-12-29 16:34:27 DBG] Heartbeat
+[2025-12-29 16:34:57 DBG] Heartbeat
+[2025-12-29 16:35:27 DBG] Heartbeat
+[2025-12-29 16:35:57 DBG] Heartbeat
+[2025-12-29 16:36:27 DBG] Heartbeat
+[2025-12-29 16:36:57 DBG] Heartbeat
+[2025-12-29 16:37:27 DBG] Heartbeat
+[2025-12-29 16:37:57 DBG] Heartbeat
+[2025-12-29 16:38:27 DBG] Heartbeat
+[2025-12-29 16:38:57 DBG] Heartbeat
+[2025-12-29 16:39:27 DBG] Heartbeat
+[2025-12-29 16:39:57 DBG] Heartbeat
+[2025-12-29 16:40:27 DBG] Heartbeat
+[2025-12-29 16:40:57 DBG] Heartbeat
+[2025-12-29 16:41:27 DBG] Heartbeat
+[2025-12-29 16:41:57 DBG] Heartbeat
+[2025-12-29 16:42:27 DBG] Heartbeat
+[2025-12-29 16:42:57 DBG] Heartbeat
+[2025-12-29 16:43:27 DBG] Heartbeat
+[2025-12-29 16:43:57 DBG] Heartbeat
+[2025-12-29 16:44:27 DBG] Heartbeat
+[2025-12-29 16:44:57 DBG] Heartbeat
+[2025-12-29 16:45:27 DBG] Heartbeat
+[2025-12-29 16:45:57 DBG] Heartbeat
+[2025-12-29 16:50:35 DBG] Heartbeat
+[2025-12-29 16:51:05 DBG] Heartbeat
+[2025-12-29 16:51:35 DBG] Heartbeat
+[2025-12-29 16:52:05 DBG] Heartbeat
+[2025-12-29 16:52:35 DBG] Heartbeat
+[2025-12-29 16:53:05 DBG] Heartbeat
+[2025-12-29 16:53:35 DBG] Heartbeat
+[2025-12-29 16:54:05 DBG] Heartbeat
+[2025-12-29 16:54:35 DBG] Heartbeat
+[2025-12-29 16:55:05 DBG] Heartbeat
+[2025-12-29 17:02:00 DBG] Heartbeat
+[2025-12-29 17:02:30 DBG] Heartbeat
+[2025-12-29 17:03:00 DBG] Heartbeat
+[2025-12-29 17:03:30 DBG] Heartbeat
+[2025-12-29 17:04:00 DBG] Heartbeat
+[2025-12-29 17:04:30 DBG] Heartbeat
+[2025-12-29 17:05:00 DBG] Heartbeat
+[2025-12-29 17:05:30 DBG] Heartbeat
+[2025-12-29 17:06:00 DBG] Heartbeat
+[2025-12-29 17:06:30 DBG] Heartbeat
+[2025-12-29 17:07:00 DBG] Heartbeat
+[2025-12-29 17:07:31 DBG] Heartbeat
+[2025-12-29 17:08:01 DBG] Heartbeat
+[2025-12-29 17:08:31 DBG] Heartbeat
+[2025-12-29 17:09:01 DBG] Heartbeat
+[2025-12-29 17:09:31 DBG] Heartbeat
+[2025-12-29 17:10:01 DBG] Heartbeat
+[2025-12-29 17:10:31 DBG] Heartbeat
+[2025-12-29 17:11:01 DBG] Heartbeat
+[2025-12-29 17:11:31 DBG] Heartbeat
+[2025-12-29 17:12:01 DBG] Heartbeat
+[2025-12-29 17:12:31 DBG] Heartbeat
+[2025-12-29 17:13:01 DBG] Heartbeat
+[2025-12-29 17:13:31 DBG] Heartbeat
+[2025-12-29 17:14:01 DBG] Heartbeat
+[2025-12-29 17:14:31 DBG] Heartbeat
+[2025-12-29 17:15:01 DBG] Heartbeat
+[2025-12-29 17:15:31 DBG] Heartbeat
+[2025-12-29 17:16:01 DBG] Heartbeat
+[2025-12-29 17:16:31 DBG] Heartbeat
+[2025-12-29 17:17:01 DBG] Heartbeat
+[2025-12-29 17:17:31 DBG] Heartbeat
+[2025-12-29 17:18:01 DBG] Heartbeat
+[2025-12-29 17:18:31 DBG] Heartbeat
+[2025-12-29 17:19:01 DBG] Heartbeat
+[2025-12-29 17:19:31 DBG] Heartbeat
+[2025-12-29 17:20:01 DBG] Heartbeat
+[2025-12-29 17:20:31 DBG] Heartbeat
+[2025-12-29 17:21:01 DBG] Heartbeat
+[2025-12-29 17:21:31 DBG] Heartbeat
+[2025-12-29 17:22:01 DBG] Heartbeat
+[2025-12-29 17:22:31 DBG] Heartbeat
+[2025-12-29 17:23:01 DBG] Heartbeat
+[2025-12-29 17:23:31 DBG] Heartbeat
+[2025-12-29 17:24:01 DBG] Heartbeat
+[2025-12-29 17:24:32 DBG] Heartbeat
+[2025-12-29 17:25:02 DBG] Heartbeat
+[2025-12-29 17:28:15 DBG] Heartbeat
+[2025-12-29 17:28:45 DBG] Heartbeat
+[2025-12-29 17:29:15 DBG] Heartbeat
+[2025-12-29 17:29:45 DBG] Heartbeat
+[2025-12-29 17:30:15 DBG] Heartbeat
+[2025-12-29 17:30:45 DBG] Heartbeat
+[2025-12-29 17:31:15 DBG] Heartbeat
+[2025-12-29 17:31:45 DBG] Heartbeat
+[2025-12-29 17:32:15 DBG] Heartbeat
+[2025-12-29 17:32:45 DBG] Heartbeat
+[2025-12-29 17:33:15 DBG] Heartbeat
+[2025-12-29 17:33:45 DBG] Heartbeat
+[2025-12-29 17:34:15 DBG] Heartbeat
+[2025-12-29 17:34:45 DBG] Heartbeat
+[2025-12-29 17:35:15 DBG] Heartbeat
+[2025-12-29 17:35:45 DBG] Heartbeat
+[2025-12-29 17:36:15 DBG] Heartbeat
+[2025-12-29 17:36:45 DBG] Heartbeat
+[2025-12-29 17:37:15 DBG] Heartbeat
+[2025-12-29 17:37:45 DBG] Heartbeat
+[2025-12-29 17:38:15 DBG] Heartbeat
+[2025-12-29 17:38:46 DBG] Heartbeat
+[2025-12-29 17:39:16 DBG] Heartbeat
+[2025-12-29 17:39:46 DBG] Heartbeat
+[2025-12-29 17:40:16 DBG] Heartbeat
+[2025-12-29 17:40:46 DBG] Heartbeat
+[2025-12-29 17:41:16 DBG] Heartbeat
+[2025-12-29 17:41:46 DBG] Heartbeat
+[2025-12-29 17:44:05 DBG] Heartbeat
+[2025-12-29 17:44:35 DBG] Heartbeat
+[2025-12-29 17:45:05 DBG] Heartbeat
+[2025-12-29 17:45:35 DBG] Heartbeat
+[2025-12-29 17:46:05 DBG] Heartbeat
+[2025-12-29 17:46:35 DBG] Heartbeat
+[2025-12-29 17:47:05 DBG] Heartbeat
+[2025-12-29 17:47:35 DBG] Heartbeat
+[2025-12-29 17:48:05 DBG] Heartbeat
+[2025-12-29 17:48:35 DBG] Heartbeat
+[2025-12-29 17:49:05 DBG] Heartbeat
+[2025-12-29 17:49:35 DBG] Heartbeat
+[2025-12-29 17:50:05 DBG] Heartbeat
+[2025-12-29 17:50:35 DBG] Heartbeat
+[2025-12-29 17:51:05 DBG] Heartbeat
+[2025-12-29 17:51:35 DBG] Heartbeat
+[2025-12-29 17:52:05 DBG] Heartbeat
+[2025-12-29 17:52:35 DBG] Heartbeat
+[2025-12-29 17:53:05 DBG] Heartbeat
+[2025-12-29 17:53:35 DBG] Heartbeat
+[2025-12-29 17:54:05 DBG] Heartbeat
+[2025-12-29 17:54:35 DBG] Heartbeat
+[2025-12-29 17:55:05 DBG] Heartbeat
+[2025-12-29 17:55:35 DBG] Heartbeat
+[2025-12-29 17:56:05 DBG] Heartbeat

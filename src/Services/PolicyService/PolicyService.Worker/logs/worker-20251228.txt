@@ -1,0 +1,224 @@
+[2025-12-28 17:59:41 INF] Starting Policy Processing Worker
+[2025-12-28 17:59:50 INF] Azure Key Vault configured
+[2025-12-28 17:59:50 FTL] Worker terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: Microsoft.Extensions.Hosting.IHostedService Lifetime: Singleton ImplementationType: PolicyService.Worker.Worker': Cannot consume scoped service 'PolicyService.Worker.Services.PolicyProcessingService' from singleton 'Microsoft.Extensions.Hosting.IHostedService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: Microsoft.Extensions.Hosting.IHostedService Lifetime: Singleton ImplementationType: PolicyService.Worker.Worker': Cannot consume scoped service 'PolicyService.Worker.Services.PolicyProcessingService' from singleton 'Microsoft.Extensions.Hosting.IHostedService'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'PolicyService.Worker.Services.PolicyProcessingService' from singleton 'Microsoft.Extensions.Hosting.IHostedService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.<>c__DisplayClass12_0.<.ctor>b__0()
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Program.cs:line 69
+[2025-12-28 18:05:00 INF] Starting Policy Processing Worker
+[2025-12-28 18:05:06 INF] Azure Key Vault configured
+[2025-12-28 18:05:06 FTL] Worker terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: Microsoft.Extensions.Hosting.IHostedService Lifetime: Singleton ImplementationType: PolicyService.Worker.Worker': Cannot consume scoped service 'PolicyService.Worker.Services.PolicyProcessingService' from singleton 'Microsoft.Extensions.Hosting.IHostedService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: Microsoft.Extensions.Hosting.IHostedService Lifetime: Singleton ImplementationType: PolicyService.Worker.Worker': Cannot consume scoped service 'PolicyService.Worker.Services.PolicyProcessingService' from singleton 'Microsoft.Extensions.Hosting.IHostedService'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'PolicyService.Worker.Services.PolicyProcessingService' from singleton 'Microsoft.Extensions.Hosting.IHostedService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.<>c__DisplayClass12_0.<.ctor>b__0()
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Program.cs:line 69
+[2025-12-28 18:10:50 INF] ========================================
+[2025-12-28 18:10:50 INF] Starting Policy Processing Worker
+[2025-12-28 18:10:50 INF] ========================================
+[2025-12-28 18:10:50 INF] Configuration files loaded
+[2025-12-28 18:10:50 INF] Key Vault URL from config: https://kv-policyservice-dev.vault.azure.net/
+[2025-12-28 18:10:50 INF] Attempting to connect to Key Vault...
+[2025-12-28 18:10:55 INF] Azure Key Vault configured
+[2025-12-28 18:10:55 INF] Serilog configured
+[2025-12-28 18:10:55 INF] Use Azure SQL: true
+[2025-12-28 18:10:55 INF] Database connection string found (length: 250)
+[2025-12-28 18:10:55 INF] Database context configured
+[2025-12-28 18:10:55 INF] Processing services registered
+[2025-12-28 18:10:55 INF] Worker service registered
+[2025-12-28 18:10:55 FTL] Worker terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: Microsoft.Extensions.Hosting.IHostedService Lifetime: Singleton ImplementationType: PolicyService.Worker.Worker': Cannot consume scoped service 'PolicyService.Worker.Services.PolicyProcessingService' from singleton 'Microsoft.Extensions.Hosting.IHostedService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: Microsoft.Extensions.Hosting.IHostedService Lifetime: Singleton ImplementationType: PolicyService.Worker.Worker': Cannot consume scoped service 'PolicyService.Worker.Services.PolicyProcessingService' from singleton 'Microsoft.Extensions.Hosting.IHostedService'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'PolicyService.Worker.Services.PolicyProcessingService' from singleton 'Microsoft.Extensions.Hosting.IHostedService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.<>c__DisplayClass12_0.<.ctor>b__0()
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Program.cs:line 100
+[2025-12-28 18:10:56 FTL] Press any key to exit...
+[2025-12-28 18:11:08 INF] ========================================
+[2025-12-28 18:11:08 INF] Starting Policy Processing Worker
+[2025-12-28 18:11:08 INF] ========================================
+[2025-12-28 18:11:09 INF] Configuration files loaded
+[2025-12-28 18:11:09 INF] Key Vault URL from config: https://kv-policyservice-dev.vault.azure.net/
+[2025-12-28 18:11:09 INF] Attempting to connect to Key Vault...
+[2025-12-28 18:11:12 INF] Azure Key Vault configured
+[2025-12-28 18:11:12 INF] Serilog configured
+[2025-12-28 18:11:12 INF] Use Azure SQL: true
+[2025-12-28 18:11:12 INF] Database connection string found (length: 250)
+[2025-12-28 18:11:12 INF] Database context configured
+[2025-12-28 18:11:12 INF] Processing services registered
+[2025-12-28 18:11:12 INF] Worker service registered
+[2025-12-28 18:11:12 FTL] Worker terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: Microsoft.Extensions.Hosting.IHostedService Lifetime: Singleton ImplementationType: PolicyService.Worker.Worker': Cannot consume scoped service 'PolicyService.Worker.Services.PolicyProcessingService' from singleton 'Microsoft.Extensions.Hosting.IHostedService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: Microsoft.Extensions.Hosting.IHostedService Lifetime: Singleton ImplementationType: PolicyService.Worker.Worker': Cannot consume scoped service 'PolicyService.Worker.Services.PolicyProcessingService' from singleton 'Microsoft.Extensions.Hosting.IHostedService'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'PolicyService.Worker.Services.PolicyProcessingService' from singleton 'Microsoft.Extensions.Hosting.IHostedService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitCallSite(ServiceCallSite callSite, CallSiteValidatorState argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.<>c__DisplayClass12_0.<.ctor>b__0()
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Program.cs:line 100
+[2025-12-28 18:11:12 FTL] Press any key to exit...
+[2025-12-28 18:17:32 INF] ========================================
+[2025-12-28 18:17:32 INF] Starting Policy Processing Worker
+[2025-12-28 18:17:32 INF] ========================================
+[2025-12-28 18:17:32 INF] Configuration files loaded
+[2025-12-28 18:17:32 INF] Key Vault URL from config: https://kv-policyservice-dev.vault.azure.net/
+[2025-12-28 18:17:32 INF] Attempting to connect to Key Vault...
+[2025-12-28 18:17:39 INF] Azure Key Vault configured
+[2025-12-28 18:17:39 INF] Serilog configured
+[2025-12-28 18:17:39 INF] Use Azure SQL: true
+[2025-12-28 18:17:39 INF] Database connection string found (length: 250)
+[2025-12-28 18:17:39 INF] Database context configured
+[2025-12-28 18:17:39 INF] Processing services registered
+[2025-12-28 18:17:39 INF] Worker service registered
+[2025-12-28 18:17:39 INF] ========================================
+[2025-12-28 18:17:39 INF] Worker configured successfully
+[2025-12-28 18:17:39 INF] ========================================
+[2025-12-28 18:17:39 INF] Policy Processing Worker starting...
+[2025-12-28 18:17:39 INF] Worker started | Queue: policy-processing-queue | MaxConcurrent: 5
+[2025-12-28 18:17:39 INF] Listening for messages...
+[2025-12-28 18:17:42 INF] Received message | MessageId: 82f14414b421402bb5694454176fa6b8 | CorrelationId: 2875fb37-ddfd-494e-9d7b-c44561bc9363
+[2025-12-28 18:17:42 INF] Received message | MessageId: 5311d744-1e38-4705-ba8a-826d29cb2cdc | CorrelationId: 4bc9925d-ffc7-4501-b1fc-2c2a708d62b0
+[2025-12-28 18:17:42 INF] Received message | MessageId: afb7f20b-f598-460b-b850-6aa71fc4a9c6 | CorrelationId: 07c71cbb-70fa-4129-a937-a7afb5c31269
+[2025-12-28 18:17:42 INF] Processing policy  | PolicyId: "00000000-0000-0000-0000-000000000000"
+[2025-12-28 18:17:42 INF] Processing policy POL-20251228-466CA842 | PolicyId: "c08abd3e-536b-4054-8cec-34759ee6c114"
+[2025-12-28 18:17:42 INF] Processing policy POL-20251228-D3304273 | PolicyId: "251fec03-132b-4126-b176-d60586e40321"
+[2025-12-28 18:17:42 INF] Generated file | Name: POLICY_20251228_101742_2875fb37.txt | Policy: 
+[2025-12-28 18:17:42 INF] Generated file | Name: POLICY_20251228_101742_07c71cbb.txt | Policy: POL-20251228-D3304273
+[2025-12-28 18:17:42 INF] File generated: D:\PolicyBooking-FlatFiles\Outbound\POLICY_20251228_101742_2875fb37.txt
+[2025-12-28 18:17:42 INF] Generated file | Name: POLICY_20251228_101742_4bc9925d.txt | Policy: POL-20251228-466CA842
+[2025-12-28 18:17:42 INF] File generated: D:\PolicyBooking-FlatFiles\Outbound\POLICY_20251228_101742_07c71cbb.txt
+[2025-12-28 18:17:42 INF] File generated: D:\PolicyBooking-FlatFiles\Outbound\POLICY_20251228_101742_4bc9925d.txt
+[2025-12-28 18:17:42 INF] Waiting for end booking system... ("00:00:05")
+[2025-12-28 18:17:42 INF] Waiting for end booking system... ("00:00:05")
+[2025-12-28 18:17:42 INF] Waiting for end booking system... ("00:00:05")
+[2025-12-28 18:17:50 INF] Updated policy "251fec03-132b-4126-b176-d60586e40321" | Status: "Approved"
+[2025-12-28 18:17:50 INF] Successfully processed policy POL-20251228-D3304273 | Status: Approved
+[2025-12-28 18:17:50 ERR] Policy "00000000-0000-0000-0000-000000000000" not found in database
+[2025-12-28 18:17:51 ERR] Error processing message | MessageId: 82f14414b421402bb5694454176fa6b8
+System.InvalidOperationException: Policy 00000000-0000-0000-0000-000000000000 not found
+   at PolicyService.Worker.Services.PolicyProcessingService.UpdatePolicyStatusAsync(Guid policyId, Boolean isSuccess, String filePath, CancellationToken cancellationToken) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Services\PolicyProcessingService.cs:line 138
+   at PolicyService.Worker.Services.PolicyProcessingService.ProcessPolicyAsync(ProcessMessageEventArgs args, CancellationToken cancellationToken) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Services\PolicyProcessingService.cs:line 78
+[2025-12-28 18:17:51 WRN] Abandoning message for retry | Attempt: 1/3
+[2025-12-28 18:17:51 INF] Updated policy "c08abd3e-536b-4054-8cec-34759ee6c114" | Status: "Rejected"
+[2025-12-28 18:17:51 INF] Received message | MessageId: 82f14414b421402bb5694454176fa6b8 | CorrelationId: 9e4c01f9-5188-4535-8ffa-fff2fdfcf24e
+[2025-12-28 18:17:51 INF] Processing policy  | PolicyId: "00000000-0000-0000-0000-000000000000"
+[2025-12-28 18:17:51 INF] Generated file | Name: POLICY_20251228_101751_9e4c01f9.txt | Policy: 
+[2025-12-28 18:17:51 INF] File generated: D:\PolicyBooking-FlatFiles\Outbound\POLICY_20251228_101751_9e4c01f9.txt
+[2025-12-28 18:17:51 INF] Waiting for end booking system... ("00:00:05")
+[2025-12-28 18:17:51 INF] Successfully processed policy POL-20251228-466CA842 | Status: Rejected
+[2025-12-28 18:17:56 ERR] Policy "00000000-0000-0000-0000-000000000000" not found in database
+[2025-12-28 18:17:56 ERR] Error processing message | MessageId: 82f14414b421402bb5694454176fa6b8
+System.InvalidOperationException: Policy 00000000-0000-0000-0000-000000000000 not found
+   at PolicyService.Worker.Services.PolicyProcessingService.UpdatePolicyStatusAsync(Guid policyId, Boolean isSuccess, String filePath, CancellationToken cancellationToken) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Services\PolicyProcessingService.cs:line 138
+   at PolicyService.Worker.Services.PolicyProcessingService.ProcessPolicyAsync(ProcessMessageEventArgs args, CancellationToken cancellationToken) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Services\PolicyProcessingService.cs:line 78
+[2025-12-28 18:17:56 WRN] Abandoning message for retry | Attempt: 2/3
+[2025-12-28 18:17:56 INF] Received message | MessageId: 82f14414b421402bb5694454176fa6b8 | CorrelationId: 74c82c56-0285-425f-af6c-a9d0d7214377
+[2025-12-28 18:17:56 INF] Processing policy  | PolicyId: "00000000-0000-0000-0000-000000000000"
+[2025-12-28 18:17:56 INF] Generated file | Name: POLICY_20251228_101756_74c82c56.txt | Policy: 
+[2025-12-28 18:17:56 INF] File generated: D:\PolicyBooking-FlatFiles\Outbound\POLICY_20251228_101756_74c82c56.txt
+[2025-12-28 18:17:56 INF] Waiting for end booking system... ("00:00:05")
+[2025-12-28 18:18:01 ERR] Policy "00000000-0000-0000-0000-000000000000" not found in database
+[2025-12-28 18:18:02 ERR] Error processing message | MessageId: 82f14414b421402bb5694454176fa6b8
+System.InvalidOperationException: Policy 00000000-0000-0000-0000-000000000000 not found
+   at PolicyService.Worker.Services.PolicyProcessingService.UpdatePolicyStatusAsync(Guid policyId, Boolean isSuccess, String filePath, CancellationToken cancellationToken) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Services\PolicyProcessingService.cs:line 138
+   at PolicyService.Worker.Services.PolicyProcessingService.ProcessPolicyAsync(ProcessMessageEventArgs args, CancellationToken cancellationToken) in D:\Projects\Booking\PolicyBooking\src\Services\PolicyService\PolicyService.Worker\Services\PolicyProcessingService.cs:line 78
+[2025-12-28 18:18:02 ERR] Moving to dead letter queue after 3 attempts
+[2025-12-28 18:18:09 DBG] Heartbeat
+[2025-12-28 18:18:39 DBG] Heartbeat
+[2025-12-28 18:19:09 DBG] Heartbeat
+[2025-12-28 18:19:39 DBG] Heartbeat
+[2025-12-28 18:20:09 DBG] Heartbeat
+[2025-12-28 18:20:39 DBG] Heartbeat
+[2025-12-28 18:21:09 DBG] Heartbeat
+[2025-12-28 18:21:39 DBG] Heartbeat
+[2025-12-28 18:22:09 DBG] Heartbeat
+[2025-12-28 18:22:39 DBG] Heartbeat
+[2025-12-28 18:23:11 INF] ========================================
+[2025-12-28 18:23:11 INF] Starting Policy Processing Worker
+[2025-12-28 18:23:11 INF] ========================================
+[2025-12-28 18:23:11 INF] Configuration files loaded
+[2025-12-28 18:23:11 INF] Key Vault URL from config: https://kv-policyservice-dev.vault.azure.net/
+[2025-12-28 18:23:11 INF] Attempting to connect to Key Vault...
+[2025-12-28 18:23:20 INF] Azure Key Vault configured
+[2025-12-28 18:23:20 INF] Serilog configured
+[2025-12-28 18:23:20 INF] Use Azure SQL: true
+[2025-12-28 18:23:20 INF] Database connection string found (length: 250)
+[2025-12-28 18:23:20 INF] Database context configured
+[2025-12-28 18:23:20 INF] Processing services registered
+[2025-12-28 18:23:20 INF] Worker service registered
+[2025-12-28 18:23:21 INF] ========================================
+[2025-12-28 18:23:21 INF] Worker configured successfully
+[2025-12-28 18:23:21 INF] ========================================
+[2025-12-28 18:23:21 INF] Policy Processing Worker starting...
+[2025-12-28 18:23:21 INF] Worker started | Queue: policy-processing-queue | MaxConcurrent: 5
+[2025-12-28 18:23:21 INF] Listening for messages...
+[2025-12-28 18:23:40 INF] Received message | MessageId: 7c356f8b-d0c8-4d18-8a58-f451f31415fd | CorrelationId: eb03cd4c-4268-43c1-a63e-94bee55457f7
+[2025-12-28 18:23:40 INF] Processing policy POL-20251228-84B73446 | PolicyId: "f8015d4a-8983-48e5-b13b-01adf70d8987"
+[2025-12-28 18:23:40 INF] Generated file | Name: POLICY_20251228_102340_eb03cd4c.txt | Policy: POL-20251228-84B73446
+[2025-12-28 18:23:40 INF] File generated: D:\PolicyBooking-FlatFiles\Outbound\POLICY_20251228_102340_eb03cd4c.txt
+[2025-12-28 18:23:40 INF] Waiting for end booking system... ("00:00:05")
+[2025-12-28 18:23:48 INF] Updated policy "f8015d4a-8983-48e5-b13b-01adf70d8987" | Status: "Approved"
+[2025-12-28 18:23:48 INF] Successfully processed policy POL-20251228-84B73446 | Status: Approved
+[2025-12-28 18:23:51 DBG] Heartbeat
+[2025-12-28 18:24:21 DBG] Heartbeat

@@ -1,0 +1,167 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "bicep",
+      "version": "0.39.26.7824",
+      "templateHash": "6347986743033667048"
+    }
+  },
+  "parameters": {
+    "containerGroupName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the container group"
+      }
+    },
+    "image": {
+      "type": "string",
+      "metadata": {
+        "description": "Container image"
+      }
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().location]",
+      "metadata": {
+        "description": "Location for the resource"
+      }
+    },
+    "cpuCores": {
+      "type": "int",
+      "defaultValue": 1,
+      "metadata": {
+        "description": "Number of CPU cores"
+      }
+    },
+    "memoryInGb": {
+      "type": "int",
+      "defaultValue": 1,
+      "metadata": {
+        "description": "Memory in GB"
+      }
+    },
+    "containerPort": {
+      "type": "int",
+      "defaultValue": 8080,
+      "metadata": {
+        "description": "Container port"
+      }
+    },
+    "dnsNameLabel": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "DNS name label (for public access)"
+      }
+    },
+    "environmentVariables": {
+      "type": "array",
+      "defaultValue": [],
+      "metadata": {
+        "description": "Environment variables"
+      }
+    },
+    "acrLoginServer": {
+      "type": "string",
+      "metadata": {
+        "description": "ACR login server"
+      }
+    },
+    "acrUsername": {
+      "type": "securestring",
+      "metadata": {
+        "description": "ACR username"
+      }
+    },
+    "acrPassword": {
+      "type": "securestring",
+      "metadata": {
+        "description": "ACR password"
+      }
+    },
+    "identityId": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Managed Identity resource ID"
+      }
+    },
+    "restartPolicy": {
+      "type": "string",
+      "defaultValue": "Always",
+      "allowedValues": [
+        "Always",
+        "Never",
+        "OnFailure"
+      ],
+      "metadata": {
+        "description": "Restart policy"
+      }
+    },
+    "tags": {
+      "type": "object",
+      "defaultValue": {},
+      "metadata": {
+        "description": "Tags for the resource"
+      }
+    }
+  },
+  "variables": {
+    "hasPublicIp": "[not(equals(parameters('dnsNameLabel'), ''))]",
+    "hasIdentity": "[not(equals(parameters('identityId'), ''))]"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.ContainerInstance/containerGroups",
+      "apiVersion": "2023-05-01",
+      "name": "[parameters('containerGroupName')]",
+      "location": "[parameters('location')]",
+      "tags": "[parameters('tags')]",
+      "identity": "[if(variables('hasIdentity'), createObject('type', 'UserAssigned', 'userAssignedIdentities', createObject(format('{0}', parameters('identityId')), createObject())), null())]",
+      "properties": {
+        "containers": [
+          {
+            "name": "[parameters('containerGroupName')]",
+            "properties": {
+              "image": "[parameters('image')]",
+              "ports": "[if(variables('hasPublicIp'), createArray(createObject('port', parameters('containerPort'), 'protocol', 'TCP')), createArray())]",
+              "environmentVariables": "[parameters('environmentVariables')]",
+              "resources": {
+                "requests": {
+                  "cpu": "[parameters('cpuCores')]",
+                  "memoryInGB": "[parameters('memoryInGb')]"
+                }
+              }
+            }
+          }
+        ],
+        "osType": "Linux",
+        "restartPolicy": "[parameters('restartPolicy')]",
+        "imageRegistryCredentials": [
+          {
+            "server": "[parameters('acrLoginServer')]",
+            "username": "[parameters('acrUsername')]",
+            "password": "[parameters('acrPassword')]"
+          }
+        ],
+        "ipAddress": "[if(variables('hasPublicIp'), createObject('type', 'Public', 'dnsNameLabel', parameters('dnsNameLabel'), 'ports', createArray(createObject('port', parameters('containerPort'), 'protocol', 'TCP'))), null())]"
+      }
+    }
+  ],
+  "outputs": {
+    "fqdn": {
+      "type": "string",
+      "value": "[if(variables('hasPublicIp'), reference(resourceId('Microsoft.ContainerInstance/containerGroups', parameters('containerGroupName')), '2023-05-01').ipAddress.fqdn, '')]"
+    },
+    "ipAddress": {
+      "type": "string",
+      "value": "[if(variables('hasPublicIp'), reference(resourceId('Microsoft.ContainerInstance/containerGroups', parameters('containerGroupName')), '2023-05-01').ipAddress.ip, '')]"
+    },
+    "name": {
+      "type": "string",
+      "value": "[parameters('containerGroupName')]"
+    }
+  }
+}

@@ -39,13 +39,13 @@ jobs:
     - name: Run tests
       run: dotnet test PolicyBooking.sln --configuration Release --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx"
     
-    - name: Publish test results
-      uses: dorny/test-reporter@v1
-      if: always()
-      with:
-        name: Test Results
-        path: '**/test-results.trx'
-        reporter: dotnet-trx
+    # - name: Publish test results
+      # uses: dorny/test-reporter@v1
+      # if: always()
+      # with:
+        # name: Test Results
+        # path: '**/test-results.trx'
+        # reporter: dotnet-trx
   
   build-and-push-images:
     name: Build & Push Docker Images
